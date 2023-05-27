@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+.project {
+  width: calc(33.33% - 20px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 16px;
+  color: #555555;
+}
+  
+.stylish-text-orange {
+  color: #ff6f00;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.project {
+  width: calc(33.33% - 20px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 16px;
+  color: #555555;
+}
+
+@media (max-width: 768px) {
+  .project {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .project {
+    width: 100%;
+  }
+}
+
+
+
+</style>
+
+<section id="projects">
+    <div class="container">
+      <h2 class="stylish-text-orange">Featured Projects and Endeavors</h2>
+      <div class="project-container">
+        <div class="row">
+          <div class="project">
+            <img src="images/pic13.png" alt="Project 1">
+            <div class="description">
+              <h3>Project 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper enim in ipsum placerat, vel suscipit dui finibus.</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/pic12.png" alt="Project 2">
+            <div class="description">
+              <h3>Project 2</h3>
+              <p>Donec vitae enim vitae lacus ullamcorper luctus sed et lectus. Vivamus in eros et elit viverra placerat.</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/pic14.jpg" alt="Project 3">
+            <div class="description">
+              <h3>Project 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper enim in ipsum placerat, vel suscipit dui finibus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="project">
+            <img src="images/pic21.png" alt="Project 4">
+            <div class="description">
+              <h3>Project 4</h3>
+              <p>Donec vitae enim vitae lacus ullamcorper luctus sed et lectus. Vivamus in eros et elit viverra placerat.</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/pic17.png" alt="Project 5">
+            <div class="description">
+              <h3>Project 5</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper enim in ipsum placerat, vel suscipit dui finibus.</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/pic20.png" alt="Project 6">
+            <div class="description">
+              <h3>Project 6</h3>
+              <p>Donec vitae enim vitae lacus ullamcorper luctus sed et lectus. Vivamus in eros et elit viverra placerat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
